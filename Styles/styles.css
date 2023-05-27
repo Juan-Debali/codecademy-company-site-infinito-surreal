@@ -869,6 +869,7 @@ nav {
 
 #contact{
     flex-direction: column;
+    justify-content: center;
 }
 
 
