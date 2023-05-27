@@ -867,6 +867,11 @@ nav {
     flex-direction: column;
 }
 
+.gallery-section__t-shirts {
+    display: flex;
+    flex-direction: column;
+}
+
 #contact{
     flex-direction: column;
     justify-content: center;
