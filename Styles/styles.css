@@ -48,6 +48,19 @@ img {
     object-fit: contain;
 }
 
+.hero-about {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+    padding-top: 10rem;
+    border-bottom: 1rem groove rgb(200, 182, 166);
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 .hero {
     width: 100%;
     height: auto;
@@ -76,18 +89,7 @@ img {
 }
 
 
-.hero-about {
-    margin-top: -2rem;
-    padding-top: 10rem;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 1rem groove rgb(200, 182, 166);
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
 
 /*Header section*/
 
@@ -796,4 +798,78 @@ li:not(:hover) {
 
 .footer__social-networks__text {
     text-align: center;
+}
+
+@media only screen 
+and (max-device-width: 450px) {
+
+html {
+ font-size: 0.5rem;
+}
+
+header {
+    flex-direction: row;
+    border-bottom: 1rem ridge rgb(200, 182, 166);
+    width: 100%;
+    position: fixed;
+    top: -3rem;
+}
+
+header:hover ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.hero-about {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.menu__content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#menu__logo {
+    padding: 0rem;
+    margin-left: 0rem;
+    width: 3rem;
+    height: auto;
+}
+
+.menu__animation {
+    position: fixed;
+    margin-top: 0;
+    margin-left: 0;
+    z-index: 10;
+    width: 5rem;
+    height: auto;
+}
+
+#gallery-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-section__art-paintings {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact{
+    flex-direction: column;
+}
+
+
 }
