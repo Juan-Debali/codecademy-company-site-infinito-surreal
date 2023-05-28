@@ -224,6 +224,7 @@ li:not(:hover) {
 }
 
 .about-section__text {
+    display: none;
     width: 80%;
     padding: 2rem;
 }
