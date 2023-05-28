@@ -223,6 +223,12 @@ li:not(:hover) {
     border-radius: 1rem;
 }
 
+#about-section:hover .about-section__text {
+    display:block;
+}
+
+
+
 .about-section__text {
     display: none;
     width: 80%;
