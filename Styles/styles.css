@@ -103,10 +103,14 @@ nav {
 
 #menu {
     display: flex;
-    width: 100%;
+    width: 95%;
 }
 
-#menu__logo {
+.mobile__menu {
+    display:none;
+}
+
+.menu__logo__logo {
     padding: 1rem;
     margin-left: 10rem;
     width: 7rem;
@@ -173,6 +177,7 @@ li:not(:hover) {
 .hero-about {
     display: flex;
     flex-direction: row;
+    width: 100vw;
     margin-top: -2rem;
     padding-top: 10rem;
     border-bottom: 1rem groove rgb(200, 182, 166);
@@ -211,13 +216,13 @@ li:not(:hover) {
 }
 
 #about-section {
+    width: 100vw;
     margin-top: 1rem;
     margin-bottom: 2rem;
     margin-right: 2rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
@@ -246,10 +251,11 @@ li:not(:hover) {
 /*Gallery section paintings*/
 
 #gallery-section {
+    width: 100vw;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 96%;
     height: auto;
     padding: 0.5rem;
 }
@@ -851,6 +857,10 @@ nav {
     align-content: center;
 }
 
+.pc__menu {
+    display: none;
+}
+
 .menu__content {
     display: flex;
     flex-direction: column;
@@ -917,6 +927,17 @@ nav {
     text-align: center;
     justify-content: center;
 }
+
+.mobile__footer__social-networks__facebook{
+    width: 3rem;
+    height: auto;
+}
+
+.mobile__footer__social-networks__instagram{
+    width: 3rem;
+    height: auto;
+}
+
 
 
 }
