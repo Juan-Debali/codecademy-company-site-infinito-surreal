@@ -753,7 +753,7 @@ li:not(:hover) {
     display: none;
 }
 
-.footer__contact{
+.pc__footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -907,13 +907,15 @@ nav {
     justify-content: center;
 }
 
-pc__footer {
+.pc__footer {
     display:none;
 }
 
 .mobile__footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
 }
 
 
