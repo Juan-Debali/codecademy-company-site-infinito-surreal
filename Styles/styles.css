@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Comfortaa:wght@400;500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,400&family=Dancing+Script:wght@400;500;700&family=Lora:ital,wght@0,400;0,500;0,700;1,400&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400&family=Quicksand:wght@400;500;700&family=Raleway:ital,wght@0,400;0,500;0,700;1,400&family=Tangerine:wght@400;700&display=swap');
 
+/*Universal Selectors */
 
 html {
     font-family: 'Quicksand';
@@ -47,49 +48,6 @@ img {
     overflow: clip;
     object-fit: contain;
 }
-
-.hero-about {
-    display: flex;
-    flex-direction: row;
-    margin-top: -2rem;
-    padding-top: 10rem;
-    border-bottom: 1rem groove rgb(200, 182, 166);
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.hero {
-    width: 100%;
-    height: auto;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
-
-}
-
-.hero__text {
-    color: white;
-    text-shadow: 0.2rem 0.2rem 0.4rem black;
-    font-style: italic;
-    font-size: 1.2rem;
-    text-align: center;
-    z-index: 10;
-    line-height: 2;
-    width: 80%;
-    padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(0.4rem);
-    -webkit-backdrop-filter: blur(1rem);
-    border: 0.25rem solid rgba(200, 182, 166, 0.11);
-    border-radius: 1rem;
-
-}
-
-
-
 
 /*Header section*/
 
@@ -210,7 +168,47 @@ li:not(:hover) {
 }
 
 
-/*About section*/
+/*Hero & About section*/
+
+.hero-about {
+    display: flex;
+    flex-direction: row;
+    margin-top: -2rem;
+    padding-top: 10rem;
+    border-bottom: 1rem groove rgb(200, 182, 166);
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+
+}
+
+.hero__text {
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.4rem black;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    z-index: 10;
+    line-height: 2;
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border: 0.25rem solid rgba(200, 182, 166, 0.11);
+    border-radius: 1rem;
+
+}
 
 #about-section {
     margin-top: 1rem;
@@ -800,17 +798,31 @@ li:not(:hover) {
     text-align: center;
 }
 
+
+/*
+
+
+MEDIAQUERIES
+MEDIAQUERIES
+MEDIAQUERIES
+
+
+*/
+
+
+
 @media only screen 
 and (max-device-width: 450px) {
 
-html {
- font-size: 0.7rem;
-}
+/* Universal Selectors */
+
+
+/*Header & Menu*/
 
 header {
     flex-direction: row;
     border-bottom: 1rem ridge rgb(200, 182, 166);
-    width: 100%;
+    max-width: 100%;
     position: fixed;
     top: -3rem;
 }
@@ -821,32 +833,28 @@ header:hover ul {
     margin-bottom: 1rem;
 }
 
-.hero-about {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    align-content: center;
 }
 
 .menu__content {
     display: flex;
     flex-direction: column;
+    align-content: center;
 
 }
 
 #menu__logo {
+    position: fixed;
     padding: 0rem;
     margin-left: 0rem;
-    width: 3rem;
+    margin-top: 1rem;
+    width: 2rem;
     height: auto;
-}
+    }
 
 .menu__animation {
     position: fixed;
@@ -856,6 +864,15 @@ nav {
     width: 5rem;
     height: auto;
 }
+
+/*Hero & About */
+
+.hero-about {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gallery Section */
 
 #gallery-section {
     display: flex;
@@ -871,6 +888,8 @@ nav {
     display: flex;
     flex-direction: column;
 }
+
+/*Footer*/
 
 #contact{
     flex-direction: column;
