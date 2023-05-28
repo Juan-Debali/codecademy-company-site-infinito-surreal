@@ -282,7 +282,7 @@ li:not(:hover) {
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 1 / auto / span 6;
+    grid-area: 1 / 1 / span 23 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -749,6 +749,10 @@ li:not(:hover) {
     width: 95%;
 }
 
+.mobile__footer{
+    display: none;
+}
+
 .footer__contact{
     display: flex;
     flex-direction: column;
@@ -901,6 +905,11 @@ nav {
 #contact{
     flex-direction: column;
     justify-content: center;
+}
+
+.mobile__footer{
+    display: flex;
+    flex-direction: column;
 }
 
 
