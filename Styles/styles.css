@@ -110,6 +110,11 @@ nav {
     display:none;
 }
 
+.pc__menu{
+    display: flex;
+    flex-direction: row;
+}
+
 .menu__logo__logo {
     padding: 1rem;
     margin-left: 10rem;
@@ -926,6 +931,14 @@ nav {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+}
+
+.footer__logo {
+    width: 3rem;
+}
+
+.footer__logo__icon {
+    width: 3rem;
 }
 
 .mobile__footer__social-networks__facebook{
