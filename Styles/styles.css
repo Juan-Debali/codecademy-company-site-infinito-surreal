@@ -103,7 +103,7 @@ nav {
 
 #menu {
     display: flex;
-    width: 95%;
+    width: 100%;
 }
 
 .mobile__menu {
@@ -113,6 +113,7 @@ nav {
 .pc__menu{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .menu__logo__logo {
@@ -757,7 +758,7 @@ li:not(:hover) {
     background: beige;
     padding: 3rem;
     justify-content: space-around;
-    width: 95%;
+    width: 100vw;
 }
 
 .mobile__footer{
@@ -766,8 +767,9 @@ li:not(:hover) {
 
 .pc__footer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -931,6 +933,7 @@ nav {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+    width: 100%;
 }
 
 .footer__logo {
