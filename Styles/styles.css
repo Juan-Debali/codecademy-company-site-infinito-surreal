@@ -926,7 +926,7 @@ nav {
 
 #contact{
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     width: 100vw;
 }
 
@@ -940,6 +940,7 @@ nav {
     text-align: center;
     justify-content: center;
     width: 100vw;
+    flex-wrap: wrap;
 }
 
 .mobile__footer__logo{
@@ -960,14 +961,51 @@ nav {
     height: 5rem;
 }
 
+.mobile__footer__contact{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2 3rem);
 
-.mobile__footer__social-networks__facebook{
-    width: 3rem;
+}
+
+.mobile__footer__contact__mail{
+    grid-area: 1/1/2/2;
+}
+
+.mobile__footer__mail{
+    padding: 0 2rem;
+    width: 2rem;
     height: auto;
 }
 
-.mobile__footer__social-networks__instagram{
-    width: 3rem;
+.mobile__footer__contact__whastapp{
+    grid-area: 1/2/2/3;
+}
+
+.mobile__footer__whatsapp{
+    padding: 0 2rem;
+    width: 2rem;
+    height: auto;
+}
+
+.mobile__footer__contact__facebook{
+    grid-area: 2/1/3/2;
+}
+
+.mobile__footer__facebook{
+    padding: 0 2rem;
+    width: 2rem;
+    height: auto;
+}
+
+.mobile__footer__contact__instagram{
+    grid-area: 2/2/3/3;
+}
+
+.mobile__footer__instagram{
+    padding: 0 2rem;
+    width: 2rem;
     height: auto;
 }
 
