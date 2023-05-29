@@ -3,6 +3,7 @@
 /*Universal Selectors */
 
 html {
+    width: 100vw;
     font-family: 'Quicksand';
     font-size: 16px;
 }
@@ -15,6 +16,7 @@ body {
 
 h1 {
     font-size: 2rem;
+    padding: 1rem 0;
     font-weight: bold;
     text-align: center;
 }
@@ -183,7 +185,7 @@ li:not(:hover) {
     display: flex;
     flex-direction: row;
     width: 100vw;
-    margin-top: -2rem;
+    margin-top: -4rem;
     padding-top: 10rem;
     border-bottom: 1rem groove rgb(200, 182, 166);
     justify-content: center;
@@ -762,7 +764,7 @@ li:not(:hover) {
 .pc__footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
 
 }
@@ -840,9 +842,25 @@ MEDIAQUERIES
 and (max-device-width: 450px) {
 
 /* Universal Selectors */
-
+h1{
+    font-size: 1.5rem;
+}
 
 /*Header & Menu*/
+
+#menu{
+    width: 100vw;
+}
+
+.mobile__menu{
+    margin: 0 2rem;
+}
+
+.menu__logo{
+    width:3rem;
+    height: auto;
+    padding: 1rem 3rem;
+}
 
 header {
     flex-direction: row;
