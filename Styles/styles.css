@@ -3,7 +3,10 @@
 /*Universal Selectors */
 
 html {
-    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     font-family: 'Quicksand';
     font-size: 16px;
 }
@@ -15,6 +18,7 @@ body {
 }
 
 h1 {
+    width:100%;
     font-size: 2rem;
     padding: 1rem 0;
     font-weight: bold;
@@ -25,7 +29,7 @@ h2 {
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
 }
 
 h3 {
@@ -98,7 +102,7 @@ header:not(:hover) {
 nav {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -182,11 +186,11 @@ li:not(:hover) {
 /*Hero & About section*/
 
 .hero-about {
-    display: flex;
+    display:flex;
     flex-direction: row;
-    width: 100vw;
+    width: 99%;
     margin-top: -4rem;
-    padding-top: 10rem;
+    padding: 15rem 2rem 2rem 2rem;
     border-bottom: 1rem groove rgb(200, 182, 166);
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
@@ -200,7 +204,6 @@ li:not(:hover) {
     height: auto;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
-
 }
 
 .hero__text {
@@ -209,11 +212,9 @@ li:not(:hover) {
     font-style: italic;
     font-size: 1.2rem;
     text-align: center;
-    z-index: 10;
     line-height: 2;
-    width: 80%;
-    padding: 1rem;
-    margin: 1rem 1rem 1rem 1rem;
+    width: 90%;
+    padding: 2rem;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(1rem);
@@ -223,23 +224,23 @@ li:not(:hover) {
 }
 
 #about-section {
-    width: 100vw;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
-    padding-bottom: 2rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 1rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
 }
 
+.about-section__container{
+ width:100%;
+}
 
 .about-section__text {
     display: block;
-    width: 80%;
-    padding: 2rem;
+    width: 90%;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .about-section__image {
@@ -253,13 +254,12 @@ li:not(:hover) {
 /*Gallery section paintings*/
 
 #gallery-section {
-    width: 100vw;
-    margin: 1rem;
+    width: 96%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: auto;
-    padding: 0.5rem;
+    padding: 1rem;
 }
 
 .gallery-section__art-paintings {
@@ -754,7 +754,7 @@ li:not(:hover) {
     background: beige;
     padding: 3rem;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
 }
 
 .mobile__footer{
@@ -823,7 +823,7 @@ li:not(:hover) {
     background: black;
     padding:1rem;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 /*
@@ -846,20 +846,33 @@ h1{
     font-size: 1.5rem;
 }
 
+ul {
+    gap:0.5rem;
+}
 /*Header & Menu*/
 
 #menu{
-    width: 100vw;
+    width: 100%;
 }
 
 .mobile__menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
     margin: 0 2rem;
 }
 
 .menu__logo{
+    display: flex;
     width:3rem;
     height: auto;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
+  
+}
+
+.menu__content{
+    width:60%;
 }
 
 header {
@@ -921,7 +934,11 @@ nav {
 .hero-about {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
+}
+
+.hero {
+    margin-bottom: 1rem;
 }
 
 /* Gallery Section */
@@ -929,7 +946,7 @@ nav {
 #gallery-section {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
 }
 
 .gallery-section__art-paintings {
@@ -951,7 +968,7 @@ nav {
 #contact{
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     padding: 1rem;
 }
 
@@ -1056,7 +1073,7 @@ nav {
     background: black;
     padding:1rem;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 
