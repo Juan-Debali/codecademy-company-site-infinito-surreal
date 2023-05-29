@@ -233,14 +233,9 @@ li:not(:hover) {
     border-radius: 1rem;
 }
 
-#about-section:hover .about-section__text {
-    display:block;
-}
-
-
 
 .about-section__text {
-    display: none;
+    display: block;
     width: 80%;
     padding: 2rem;
 }
@@ -821,6 +816,13 @@ li:not(:hover) {
     text-align: center;
 }
 
+.footer__development{
+    color: white;
+    background: black;
+    padding:1rem;
+    text-align: center;
+    width: 100vw;
+}
 
 /*
 
@@ -847,7 +849,7 @@ header {
     border-bottom: 1rem ridge rgb(200, 182, 166);
     max-width: 100%;
     position: fixed;
-    top: -3rem;
+    top: 0;
 }
 
 header:hover ul {
@@ -870,6 +872,7 @@ nav {
 .mobile__menu{
     display: flex;
 }
+
 .menu__content {
     display: flex;
     flex-direction: column;
@@ -914,6 +917,10 @@ nav {
 .gallery-section__art-paintings {
     display: flex;
     flex-direction: column;
+}
+
+.gallery-section__art-paintings__title{
+    font-size: 1rem;
 }
 
 .gallery-section__t-shirts {
@@ -1023,7 +1030,7 @@ nav {
 }
 .mobile__footer__title{
     margin: 1rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .footer__development{
