@@ -844,15 +844,38 @@ and (max-device-width: 450px) {
 /* Universal Selectors */
 h1{
     font-size: 1.5rem;
+    padding: 0.5rem 0;
 }
 
-ul {
+header:hover ul{
+      justify-content: space-between;
     gap:0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+ul{
+    display: none;
+}
+
+li{
+    padding:0.5rem;
+    font-size: 0.7rem;
+}
+
+li:hover{
+    padding:0.5rem;
+    font-size: 0.7rem;
 }
 /*Header & Menu*/
 
 #menu{
     width: 100%;
+}
+
+.menu__icon {
+    width: 1rem;
+    padding-left: 1rem;
+
 }
 
 .mobile__menu{
@@ -865,7 +888,7 @@ ul {
 
 .menu__logo{
     display: flex;
-    width:3rem;
+    width:4rem;
     height: auto;
     padding: 1rem 2rem;
   
@@ -881,12 +904,6 @@ header {
     max-width: 100%;
     position: fixed;
     top: 0;
-}
-
-header:hover ul {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
 }
 
 nav {
