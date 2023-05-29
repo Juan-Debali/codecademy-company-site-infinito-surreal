@@ -954,10 +954,20 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 2rem;
 }
 
 .hero {
-    margin-bottom: 1rem;
+    margin: 10rem 1rem 1rem 1rem;
+}
+
+.about-section__container{
+    max-width: 100%;
+}
+
+.about-section__text {
+    max-width:100%;
+    padding: 2rem;
 }
 
 /* Gallery Section */
@@ -988,7 +998,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .pc__footer {
@@ -1090,7 +1100,7 @@ nav {
 .footer__development{
     color: white;
     background: black;
-    padding:1rem;
+    padding:1rem 2rem;
     text-align: center;
     width: 100%;
 }
