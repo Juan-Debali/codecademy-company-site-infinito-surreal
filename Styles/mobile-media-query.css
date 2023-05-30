@@ -132,7 +132,7 @@ nav {
 }
 
 .hero__text {
-    font-size: 1rem;
+    font-size: 0.6rem;
     padding:1rem;
     margin: 0;
     width: 90%;
@@ -156,7 +156,7 @@ nav {
 .about-section__text {
     width: 100%;
     margin: 0 ;
-    font-size: 0.7rem;
+    font-size: 1rem;
     
 }
 
@@ -185,7 +185,7 @@ nav {
 }
 
 .gallery-section__art-paintings__title{
-    font-size: 0.7rem;
+    font-size: 0.rem;
 }
 
 .gallery-section__t-shirts {
