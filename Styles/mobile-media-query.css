@@ -22,6 +22,11 @@ h2{
     padding: 0.5rem 0;
 }
 
+h3{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0.5rem 0;
+}
 
 /*Header & Menu*/
 
@@ -127,7 +132,7 @@ nav {
 }
 
 .hero__text {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding:1rem;
     margin: 0;
     width: 90%;
@@ -180,7 +185,7 @@ nav {
 }
 
 .gallery-section__art-paintings__title{
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 .gallery-section__t-shirts {
