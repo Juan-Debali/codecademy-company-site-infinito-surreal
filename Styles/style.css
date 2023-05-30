@@ -153,7 +153,7 @@ ul {
 
 li {
     border-radius: 1rem;
-    padding: 1rem 5rem;
+    padding: 1rem 4rem;
     background: rgba(200, 182, 166, 0.49);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.5rem);
@@ -190,20 +190,18 @@ li:not(:hover) {
     flex-direction: row;
     width: 100%;
     margin-top: -4rem;
-    padding: 15rem 1rem 1rem 1rem;
+    padding: 15rem 0 5rem;
     border-bottom: 1rem groove rgb(200, 182, 166);
-    justify-content: center;
+    justify-content: space-around;
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url(../Images/oscar-impressos-brancos-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-gap: 1rem;
+
 }
 
 .hero {
-    width: 48%;
+    width: 47%;
     height: auto;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
 }
 
 .hero__text {
@@ -219,33 +217,38 @@ gap: 1rem;
     backdrop-filter: blur(0.4rem);
     -webkit-backdrop-filter: blur(1rem);
     border: 0.25rem solid rgba(200, 182, 166, 0.11);
-    border-radius: 1rem;
+    border-radius: 3rem;
 
 }
 
 #about-section {
-    width: 48%;
+    width: 47%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 1rem;
+    border-radius: 3rem;
 }
 
 .about-section__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .about-section__text {
     display: block;
+   margin: 0 2rem;
 
 }
 
 .about-section__image {
     text-align: center;
+
     border-radius: 0.5rem;
-    width: 100%;
+    width: 90%;
 }
 
 /*Gallery section*/
@@ -254,24 +257,23 @@ gap: 1rem;
 
 #gallery-section {
     width: 100%;
-    margin:1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: auto;
-    padding: 1rem;
 }
 
 .gallery-section__art-paintings {
     display: grid;
-    width: 100%;
-    padding: 1rem;
+    width: 95%;
     grid-template-columns: repeat(18, 1fr);
     grid-auto-rows: 0.05rem;
     justify-items: center;
     gap: 2rem;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
+    padding:1rem;
 }
 
 .gallery-section__art-paintings__title {
@@ -281,7 +283,7 @@ gap: 1rem;
     height: 100%;
     padding: 1rem 0 0 0;
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .gallery-section__art-paintings__1 {
@@ -290,7 +292,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 1 / span 23 / span 6;
+    grid-area: 1 / 1 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -315,7 +317,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 7 / span 17 / span 6;
+    grid-area: 1 / 7 / span 16 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -326,7 +328,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 6 / span 23 / span 8;
+    grid-area: 1 / 6 / span 21 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -340,7 +342,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 13 / span 18 / span 6;
+    grid-area: 1 / 13 / span 17 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -351,7 +353,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 1 / 12 / span 23 / span 8;
+    grid-area: 1 / 12 / span 20 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -364,7 +366,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 18 / 7 / span 13 / span 6;
+    grid-area: 17 / 7 / span 13 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -375,7 +377,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 18 / 6 / span 17 / span 8;
+    grid-area: 17 / 6 / span 16 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -388,7 +390,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 19 / 13 / span 21 / span 6;
+    grid-area: 20 / 13 / span 22 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -399,7 +401,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 19 / 12 / span 25 / span 8;
+    grid-area: 20 / 12 / span 26 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -412,7 +414,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 19 / 1 / span 18 / span 6;
+    grid-area: 20 / 1 / span 19 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -423,7 +425,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 19 / 1 / span 21 / span 8;
+    grid-area: 20 / 1 / span 21 / span 7;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -436,7 +438,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 37 / 1 / span 17 / span 6;
+    grid-area: 39 / 1 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -447,7 +449,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 37 / 1 / span 22 / span 8;
+    grid-area: 39 / 1 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -460,7 +462,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 31 / 7 / span 17 / span 6;
+    grid-area: 33 / 7 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -471,7 +473,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 31 / 6 / span 22 / span 8;
+    grid-area: 33 / 6 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -484,7 +486,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 40 / 13 / span 18 / span 6;
+    grid-area: 42 / 13 / span 19 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -495,7 +497,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 40 / 12 / span 20 / span 8;
+    grid-area: 42 / 12 / span 22 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -508,7 +510,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 54 / 1 / span 17 / span 6;
+    grid-area: 57 / 1 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -519,7 +521,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 54 / 1 / span 22 / span 8;
+    grid-area: 57 / 1 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -532,7 +534,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 48 / 7 / span 18 / span 6;
+    grid-area: 51 / 7 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -543,7 +545,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 48 / 6 / span 22 / span 8;
+    grid-area: 51 / 6 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -556,7 +558,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 58 / 13 / span 17 / span 6;
+    grid-area: 61 / 13 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -568,7 +570,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 58 / 12 / span 22 / span 8;
+    grid-area: 61 / 12 / span 22 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -581,7 +583,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 66 / 7 / span 14 / span 6;
+    grid-area: 69 / 7 / span 15 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -593,7 +595,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 66 / 6 / span 18 / span 8;
+    grid-area: 69 / 6 / span 19 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -606,7 +608,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 71 / 1 / span 21 / span 6;
+    grid-area: 75 / 1 / span 22 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -618,7 +620,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 71 / 1 / span 22 / span 8;
+    grid-area: 75 / 1 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -631,7 +633,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 75 / 13 / span 17 / span 6;
+    grid-area: 79 / 13 / span 18 / span 6;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -643,7 +645,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 75 / 12 / span 22 / span 8;
+    grid-area: 79 / 12 / span 22 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -656,7 +658,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 80 / 8 / span 12 / span 4;
+    grid-area: 84 / 8 / span 13 / span 4;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
 }
@@ -668,7 +670,7 @@ gap: 1rem;
     flex-direction: column;
     max-width: 100%;
     height: auto;
-    grid-area: 80 / 6 / span 15 / span 8;
+    grid-area: 84 / 6 / span 24 / span 8;
     background: white;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
@@ -682,7 +684,6 @@ gap: 1rem;
 .gallery-section__t-shirts {
     display: grid;
     width: 100%;
-    padding: 1rem;
     grid-template-columns: repeat(18, 1fr);
     grid-auto-rows: 0.05rem;
     justify-items: center;
@@ -695,7 +696,7 @@ gap: 1rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 85%;
     height: auto;
     grid-area: 1 / 1 / span 24 / span 9;
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
@@ -752,7 +753,7 @@ gap: 1rem;
     display: flex;
     flex-direction: row;
     background: beige;
-    padding: 3rem;
+    padding: 2rem 0;
     justify-content: space-around;
     width: 100%;
 }
@@ -821,7 +822,7 @@ gap: 1rem;
 .footer__development{
     color: white;
     background: black;
-    padding:1rem;
+    padding:1rem 0;
     text-align: center;
     width: 100%;
 }

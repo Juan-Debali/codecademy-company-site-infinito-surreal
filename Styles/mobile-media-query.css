@@ -117,7 +117,7 @@ nav {
 }
 
 .hero {
-   width: 95%;
+   width: 100%;
    
 }
 
@@ -127,7 +127,7 @@ nav {
  }
  
 #about-section{
-    width:95%;
+    width:100%;
  }
 .about-section__container{
     max-width:80%;
