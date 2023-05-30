@@ -2,20 +2,41 @@
 and (max-device-width: 480px) {
 
 /* Universal Selectors */
+
+html{
+    width: 100%;
+}
+
+body {
+    width:100%;
+}
+
 h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.5rem 0;
 }
 
-header:hover ul{
-      justify-content: space-between;
+h2{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+
+/*Header & Menu*/
+
+header {
+    width: 100%;
+    }
+
+ul{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
     gap:0.5rem;
     margin-bottom: 0.5rem;
 }
 
-ul{
-    display: none;
-}
 
 li{
     padding:0.5rem;
@@ -26,36 +47,34 @@ li:hover{
     padding:0.5rem;
     font-size: 0.7rem;
 }
-/*Header & Menu*/
+
 
 #menu{
     width: 100%;
-}
-
-.menu__icon {
-    width: 1rem;
-    padding-left: 1rem;
+    justify-content: space-around;
 
 }
+
 
 .mobile__menu{
+    width:100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-start;
-    margin: 0 2rem;
+    justify-content: space-around;
 }
 
 .menu__logo{
     display: flex;
-    width:4rem;
+    width:3rem;
     height: auto;
-    padding: 1rem 2rem;
+    margin-left:0.5rem;
   
 }
 
 .menu__content{
-    width:60%;
+    width:70%;
+    justify-content: space-between;
 }
 
 header {
@@ -88,23 +107,6 @@ nav {
 
 }
 
-#menu__logo {
-    position: fixed;
-    padding: 0rem;
-    margin-left: 0rem;
-    margin-top: 1rem;
-    width: 2rem;
-    height: auto;
-    }
-
-.menu__animation {
-    position: fixed;
-    margin-top: 0;
-    margin-left: 0;
-    z-index: 10;
-    width: 5rem;
-    height: auto;
-}
 
 /*Hero & About */
 
@@ -113,31 +115,48 @@ nav {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding: 12rem 1.5rem 1.5rem 1.5rem;
+    padding: 11rem 0 1.5rem 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),url(../Images/hero-about.svg);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 .hero {
-   width: 100%;
-   
+   width: 94%;
+   margin: 0 0.3rem;
 }
 
 .hero__text {
+    font-size: 0.8rem;
     padding:1rem;
-    width:90%;
- }
+    margin: 0;
+    width: 90%;
+    border-radius: 1.5rem;
+    backdrop-filter: blur(0.15rem);
+    -webkit-backdrop-filter: blur(1rem);
+     }
  
 #about-section{
-    width:100%;
+    margin-top: 2rem;
+    width:96%;
+    margin: 1rem 0.3rem 0.3rem 0.3rem;
+    border-radius: 1.5rem;
  }
 .about-section__container{
-    max-width:80%;
-    padding: 2rem;
+    max-width:100%;
+    padding: 1rem;
+    
 }
 
 .about-section__text {
     width: 100%;
-    padding:0;
-    margin: 0;
+    margin: 0 ;
+    font-size: 0.7rem;
+    
+}
+
+.about-section__image {
+    width: 100%;
 }
 
 /* Gallery Section */
@@ -145,12 +164,19 @@ nav {
 #gallery-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 0 1rem;
+
 }
 
 .gallery-section__art-paintings {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
 }
 
 .gallery-section__art-paintings__title{
@@ -168,7 +194,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 2rem;
 }
 
 .pc__footer {
@@ -181,6 +206,7 @@ nav {
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .mobile__footer__logo__icon{
@@ -270,7 +296,7 @@ nav {
 .footer__development{
     color: white;
     background: black;
-    padding:1rem 2rem;
+    padding:1rem 0;
     text-align: center;
     width: 100%;
 }
